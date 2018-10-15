@@ -2,6 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class PascalTriangle2 {
+
     public List<Integer> getRow(int rowIndex) {
         List<Integer> res = new ArrayList<>();
         if (rowIndex < 0) {

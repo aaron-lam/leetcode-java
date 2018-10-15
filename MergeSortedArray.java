@@ -1,4 +1,5 @@
 public class MergeSortedArray {
+
     public void merge(int[] nums1, int m, int[] nums2, int n) {
         if (nums1 == null || nums2 == null) {
             return;
