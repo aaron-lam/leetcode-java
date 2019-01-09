@@ -24,17 +24,17 @@ public class FourSum {
                     if (sum == target) {
                         res.add(Arrays.asList(nums[i], nums[j], nums[start], nums[end]));
                         while (start < end && nums[start] == nums[start + 1]) {
-                            start = start + 1;
+                            start += 1;
                         }
                         while (start < end && nums[end] == nums[end - 1]) {
-                            end = end - 1;
+                            end -= 1;
                         }
-                        start = start + 1;
-                        end = end - 1;
+                        start += 1;
+                        end -= 1;
                     } else if (sum < target) {
-                        start = start + 1;
+                        start += 1;
                     } else {
-                        end = end - 1;
+                        end -= 1;
                     }
                 }
             }
