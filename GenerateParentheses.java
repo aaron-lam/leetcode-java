@@ -23,5 +23,4 @@ public class GenerateParentheses {
             backtrack(res, cur	 + ")", left, right + 1, n);
         }
     }
-
 }

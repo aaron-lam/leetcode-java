@@ -18,9 +18,6 @@ public class Combinations {
             return;
         }
         for (int i = idx; i <= n; i++) {
-            if (list.contains(i)) {
-                continue;
-            }
             list.add(i);
             backtrack(res, list, n, k, i + 1);
             list.remove(list.size() - 1);
